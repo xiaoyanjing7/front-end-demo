@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>左侧固定宽度，右侧占满的布局</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <style>
+    body {
+      margin: 0;
+    }
+    .wrap {
+      display: flex; /*直接子元素会变成 inline-block*/
+    }
+
+    .left, .right {
+      height: 300px;
+    }
+
+    .left {
+      width: 200px;
+      background-color: red;
+    }
+
+    .right {
+      flex-grow: 1; /*沾满剩余部分*/
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="left">
+      <div>1</div>
+      <div>2</div>
+    </div>
+    <div class="right"></div>
+  </div>
+
+
+  <div style="margin-top: 30px;">
+    <div style="display:inline-block;background: red;height: 200px;width: 300px"></div>
+    <div style="display:inline-block;background: green;height: 200px;width: 100px"></div>
+  </div>
+</body>
+</html>

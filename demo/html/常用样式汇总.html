@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>常用样式的汇总页面</title>
+<style>
+	*{
+		list-style-type:none;
+	}
+	h1{
+		box-sizing: border-box;
+		margin-top: 0px;
+	}
+	.d1,.d2,.d3{
+		display: flex;
+		box-sizing: border-box;
+		padding: 0PX;
+	}
+	.d1_child1{
+		padding-right: 15px;
+		font-family:"simhei";
+		font-size: 20px;	
+	}
+	.d1_child2{
+		padding-right: 15px;
+		font-family:"Microsoft YaHei";
+		font-size: 23px;
+	}
+	.d1_child3{
+		padding-right: 15px;
+		font-family:"宋体";
+		font-size: 23px;
+		font-weight: bold;
+	}
+	.d1_child4{
+		padding-right: 15px;
+		font-family:"经典中圆简";
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.d2_child1{
+		padding-right: 10px;
+		color:#f00;
+	}
+	.d2_child2{
+		padding-right: 10px;
+		color:rgb(0,255,0);
+	}
+	.d2_child3{
+		padding-right: 10px;
+		color:rgba(0,255,0,0.5);
+	}
+	.d3_child1{
+		padding-right: 10px;
+		font-weight: lighter;
+	}
+	.d3_child2{
+		padding-right: 10px;
+		font-weight:normal;
+	}
+	.d3_child3{
+		padding-right: 10px;
+		font-weight:bold;
+	}
+	.d4{
+		font-style: oblique;
+	}
+	.up,.down{
+		box-sizing: border-box;
+	}
+	.up{
+		height:1.5;
+		background:red;
+	}
+	.down{
+		height:30px;
+		background:green;
+	}
+	
+
+</style>
+</head>
+<body>
+	<h1>常用样式示例</h1>
+		<div>
+			<h2>字</h2>
+			<h3>字体</h3>
+				<ul class="d1">
+				<li class="d1_child1">黑体</li>
+				<li class="d1_child2">微软雅黑</li>
+				<li class="d1_child3">宋体</li>
+				<li class="d1_child4">网络字体：经典中圆简</li>
+				</ul>
+			<h3>字的颜色</h3>
+				<ul class="d2">
+					<li class="d2_child1">红色 #f00</li>
+					<li class="d2_child2">绿色 rgb(0,255,0)</li>
+					<li class="d2_child3">透明度是0.5的绿 rgba(0,255,0,0.5)</li>
+				</ul>
+			<h3>粗细</h3>
+				<ul class="d3">
+					<li class="d3_child1">很细</li>
+					<li class="d3_child2">普通</li>
+					<li class="d3_child3">加粗</li>
+				</ul>
+			<h3>倾斜的字</h3>
+				<p class="d4">倾斜的字</p>
+		</div>
+		<div>
+			<h2>文本</h2>
+			<h3>行高</h3>
+			<div class="up">行高是1.5</div>
+			<div class="down">行高是30px;</div>
+		</div>
+</body>
+</html>

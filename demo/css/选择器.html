@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择器</title>
+	<style type="text/css">
+		* {
+			color: yellow;
+		}
+		div{
+			color: red;
+		}
+
+		.foo {
+			/*font-size: 30px;*/
+			color: green;
+		}
+		.foo.bar{
+			color: pink;
+		}
+
+/*		.foo {
+			color: blue;
+		}*/
+
+		#bar, #bar2, #bar3 {
+			color: blue;
+		}
+
+
+		.im {
+			color: orange !important;
+		}
+
+		li {
+			border-bottom: 1px solid red;
+		}
+		li:last-child, li:first-child {
+			border-bottom: none;
+		}
+	</style>
+</head>
+<body>
+	<div>a</div>
+	<div class="foo">b</div>
+	<div class="foo bar">b1</div>
+	<div class="foo" id="bar">c</div>
+	<div class="foo" id="bar2" style="color: indigo;">d</div>
+	<div class="foo im" id="bar3" style="color: indigo;">e</div>
+
+	1. 指定性越强，优先级越高。
+	2. 优先级一样的，后面的覆盖前面的。
+
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</body>
+</html>		

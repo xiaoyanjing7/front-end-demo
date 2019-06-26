@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>百度主页</title>
+	<style>
+	.head_item{
+		display: flex;
+		width: 100%;
+	 }
+	 .head_item{
+	 	list-style-type:none;
+		box-sizing: border-box;
+	 	justify-content: flex-end;
+	 }
+	 .head_item li{
+	 	box-sizing: border-box;
+	 	padding-left:20px;
+	 	color: black;
+	 }
+	 .head_item a{
+	 	color: black;
+	 	font-size: 13px;
+	 	font-weight: bold;
+	 }
+	 .head_item a:hover{
+	 	color: blue;
+	}
+	.logo{
+		display: flex;
+		justify-content: center;
+
+	}
+	.logo img{
+		box-sizing: border-box;
+		height:120px;
+		margin-top: 90px;
+	}
+	.p1{
+		display: flex;
+		justify-content: center;
+	}
+
+	.span1{
+		box-sizing: border-box;
+		width:500px;
+		height:40px;
+		border-right: none;
+	}
+	.span2{
+		box-sizing: border-box;
+		width:100px;
+		height:40px;
+		background:#3385ff;
+		color: white;
+		border: none;
+	}
+	.main{
+		box-sizing: border-box;
+		margin-top:230px;
+		margin-bottom:10px;
+	}
+	.p2{
+		display: flex;
+		flex-direction: column;	
+	}
+	.p2 p{
+		display: flex;
+		justify-content: center;
+		font-size: 13px;
+		font-weight: bold;
+		color: #666;
+	}
+	.p3_item{
+		list-style-type:none;
+		display: flex;
+		justify-content: center;
+	}
+	.p3_item li{
+		box-sizing: border-box;
+		padding-left:30px;
+	}
+	.p3_item a{
+		font-size: 12px;
+		color:#666;
+	}
+	.p4_item{
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+	}
+	.p4_item li{
+		box-sizing: border-box;
+		padding-left: 10px;
+		font-size: 12px;
+		color: #666;
+	}
+	.p4_item a{
+		font-size: 12px;
+		color: #666;
+	}
+	</style>
+</head>
+<body>
+	<div class="head">
+		<ul class="head_item">
+			<li><a href="http://news.baidu.com/">新闻</a></li>
+			<li><a href="https://www.hao123.com/">hao123</a></li>
+			<li><a href="http://map.baidu.com/">地图</a></li>
+			<li><a href="http://v.baidu.com/">视频</a></li>
+			<li><a href="http://tieba.baidu.com/">贴吧</a></li>
+			<li><a href="http://xueshu.baidu.com/">学术</a></li>
+			<li><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F&sms=5">登录</a></li>
+			<li><a href="http://www.baidu.com/gaoji/preferences.html">设置</a></li>
+		</ul>
+	</div>
+	<div class="logo">
+		<a href="https://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs"><img src="https://www.baidu.com/img/bd_logo1.png"></a>
+	</div>
+	<div class="p1">
+		<input class="span1" type="text" class="search-input">
+		<a href="javascript:void:(0)" title="图片搜索" class="icon-photo"></a>
+		<input class="span2" type="submit" value="百度一下" class="submit">
+	</div>
+	<div class="main">
+	 <div class="p2">
+		<p><img src="er.jpg"></p>
+		<p>百度</p>
+	 </div>
+	 <div class="p3">
+		<ul class="p3_item">
+			<li><a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a></li>
+			<li><a href="http://home.baidu.com/">关于百度</a></li>
+			<li><a href="http://ir.baidu.com/">About Baidu</a></li>
+			<li><a href="http://e.baidu.com/?refer=888">百度推广</a></li>
+		</ul>
+	 </div>
+	 <div class="p4">
+		<ul class="p4_item">
+			<li>©2019 Baidu<a href="http://www.baidu.com/duty/">使用百度前必读</a></li>
+			<li><a href="http://jianyi.baidu.com/">意见反馈</a></li>
+			<li>京ICP证030173号 </li>
+			<li><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京ICP证030173号</a></li>
+		</ul>
+	 </div>
+   </div>
+</body>
+</html>
